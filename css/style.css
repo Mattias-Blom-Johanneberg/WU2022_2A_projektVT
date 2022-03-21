@@ -28,6 +28,8 @@ nav{
     align-items: center;
     height: 15vh;
     background-color: black;
+    position: sticky;
+    top: 0;
 }
 
 .welcome_flex {
@@ -90,9 +92,21 @@ nav{
     margin-right: 3rem;
 }
 
-.exercise_img {
+.exercise_section {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+.exercise_section b {
+    width: 70vw;
+    text-align: center;
+    margin: 0.5rem;
+}
+
+.exercise_img {
+    margin: 3rem;
     width: 20rem;
 }
 
