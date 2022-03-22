@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 body {
@@ -12,15 +12,7 @@ body {
 #logo_img1 {
     height: 15vh;
     margin-left: 0px;
-    /* position: absolute;               */
 }
-
-/* #logo_img2 {
-    height: 15vh;
-    margin-left: 0px;
-    position: absolute;
-    display: none;
-} */
 
 nav{
     display: flex;
@@ -30,84 +22,6 @@ nav{
     background-color: black;
     position: sticky;
     top: 0;
-}
-
-.welcome_flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    height: 75vh;
-    font-size: 1.25rem;
-    font-weight: bold;
-    text-shadow: 1px 1px black;
-    color: white;
-}
-
-.information_flex {
-    display: flex;
-    justify-content: top;
-    margin-top: 3rem;
-    align-items: center;
-    flex-direction: column;
-    color: black;
-    height: 100vh;
-    font-size: 0.85rem;
-    background-color: white;
-}
-
-.information_flex h1 {
-    font-weight: bolder;
-}
-
-.information_flex h3 {
-    font-weight: bolder;
-    margin: 1rem;
-    margin-bottom: 3rem;
-    width: 25rem;
-    text-align: center;
-}
-
-/* #img_grid {
-    display: grid;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    grid-template-areas:  
-    "img1 img2"
-    ;
-} */
-
-#img1 {
-    display: flex;
-    grid-area: "img1";
-    width: 400px;    
-    margin: 0.75rem;
-}
-
-#img2 {
-    grid-area: "img2";
-    width: 20vw;
-    margin-right: 3rem;
-}
-
-.exercise_section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.exercise_section b {
-    width: 70vw;
-    text-align: center;
-    margin: 0.5rem;
-}
-
-.exercise_img {
-    margin: 3rem;
-    width: 20rem;
 }
 
 #background_image {
@@ -128,7 +42,6 @@ nav{
     align-items: center;
     list-style: none;
     transition: ease 0.3s;
-    
 }
 
 #nav-links a{
@@ -172,6 +85,261 @@ nav{
 #burger {
     margin-right: 60px;
     cursor: pointer;
+}
+
+.welcome_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    height: 75vh;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+    color: white;
+}
+
+.index_section {
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+    font-size: 0.85rem;
+    background-color: white;
+    width: 85vw;
+    margin-right: 7.5vw;
+    margin-left: 7.5vw;
+    text-align: center;
+}
+
+.index_section h1 {
+    margin: 2.5rem;
+    margin-bottom: 1rem;
+    font-size: xx-large;
+}
+
+.index_section h2 {
+    margin: 2rem;
+    margin-bottom: 1rem;
+}
+
+.index_section b {
+    text-align: center;
+    font-size:  large;
+    margin: 1rem;
+    width: 23rem;
+}
+
+.index_section p {
+    text-align: left;
+    font-size: medium;
+    margin: 1rem;
+    margin-bottom: 2rem;
+    width: 21rem;
+}
+
+#index_article {
+    text-align: center;
+    margin: 0.5rem;
+    width: 75vw;
+    height: 50px;
+    background-color: rgb(59, 55, 55);
+}
+
+#index_article a{
+    color: white;
+    text-decoration: none;
+}
+
+#index_article:hover { 
+    opacity: 0.6;
+    transition: all 0.25s;
+    cursor: pointer;
+}
+
+#index_img1 {
+    display: flex;
+    grid-area: "img1";
+    width: 23rem;    
+    margin: 0.75rem;
+    margin-top: 2rem;
+}
+
+.exercise_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 85vw;
+    margin-right: 7.5vw;
+    margin-left: 7.5vw;
+    background-color: white;
+    text-align: center;
+}
+
+.exercise_img {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    width: 20rem;
+}
+
+.exercise_section h1 {
+    font-size: xx-large;
+    margin: 0.5rem;
+}
+
+.exercise_section b {
+    width: 70vw;
+    margin: 0.5rem;
+}
+
+.exercise_section p {
+    width: 75vw;
+    margin: 1rem;
+    text-align: left;
+}
+
+#last_exercise_text {
+    margin-bottom: 3rem;
+}
+
+.clubs_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 85vw;
+    margin-right: 7.5vw;
+    margin-left: 7.5vw;
+    background-color: white;
+    text-align: center;
+}
+
+.clubs_section h1 {
+    font-size: xx-large;
+    margin: 3rem;
+    margin-bottom: 1rem;
+}
+
+.clubs_section b {
+    font-size: large;
+    width: 75vw;
+    margin: 1rem;
+}
+
+.clubs_section p {
+    text-align: left;
+    width: 75vw;
+    margin: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+#club_article {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+    width: 80vw;
+    height: 50px;
+    background-color: honeydew;
+}
+
+#last_club_article {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+    margin-bottom: 3rem;
+    width: 80vw;
+    height: 50px;
+    background-color: honeydew;
+}
+
+.service_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 85vw;
+    margin-right: 7.5vw;
+    margin-left: 7.5vw;
+    background-color: white;
+    text-align: left;
+}
+
+#service_img1 {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    width: 20rem;
+}
+
+#service_img2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    width: 75vw;
+}
+
+.service_section h1 {
+    font-size: xx-large;
+    margin: 0.5rem;
+}
+
+.service_section h3 {
+    text-align: left;
+    width: 75vw;
+}
+
+.service_section b {
+    width: 70vw;
+    margin: 0.5rem;
+    text-align: center;
+}
+
+.service_section p {
+    width: 75vw;
+    margin: 1rem;
+    text-align: left;
+}
+
+#last_service_text {
+    margin-bottom: 3rem;
+}
+
+.line {
+    display: block; 
+    width: 85vw;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    overflow: hidden; 
+    border-style: inset; 
+    border-width: 1px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    background-color: black;
+    color: white;
+    padding: 3rem;
+}
+
+.footer h2 {
+    margin-bottom: 1.5rem;
+}
+
+.footer p {
+    margin-bottom: 2.5rem;
+}
+
+.footer ul {
+    list-style: none;
+    margin-bottom: 2.5rem;
+}
+
+.footer ul p {
+    margin-bottom: 1rem;
+    text-decoration: underline;
 }
 
 @media screen and (min-width: 800px) {
