@@ -20,7 +20,8 @@ nav{
     align-items: center;
     height: 15vh;
     background-color: black;
-    position: sticky;
+    position: fixed;
+    width: 100vw;
     top: 0;
 }
 
@@ -87,14 +88,21 @@ nav{
     cursor: pointer;
 }
 
+.content_wrapper {
+    height: 85vh;
+    position: absolute;
+    top: 15vh;
+    width: 100%;
+    z-index: -1;
+}
+
 .welcome_text {
     display: flex;
     justify-content: center;
-    align-items: center;
     text-align: center;
     flex-direction: column;
-    height: 75vh;
-    font-size: 1.25rem;
+    height: 100vh;
+    font-size: xx-large;
     font-weight: bold;
     text-shadow: 1px 1px black;
     color: white;
@@ -148,12 +156,31 @@ nav{
     background-color: rgb(59, 55, 55);
 }
 
+#last_index_article {
+    text-align: center;
+    margin: 0.5rem;
+    width: 75vw;
+    height: 50px;
+    background-color: rgb(59, 55, 55);
+}
+
 #index_article a{
     color: white;
     text-decoration: none;
 }
 
+#last_index_article a{
+    color: white;
+    text-decoration: none;
+}
+
 #index_article:hover { 
+    opacity: 0.6;
+    transition: all 0.25s;
+    cursor: pointer;
+}
+
+#last_index_article:hover { 
     opacity: 0.6;
     transition: all 0.25s;
     cursor: pointer;
@@ -312,7 +339,7 @@ nav{
     margin-bottom: 1rem;
     overflow: hidden; 
     border-style: inset; 
-    border-width: 1px;
+    border-width: 0.1px;
 }
 
 .footer {
@@ -353,7 +380,7 @@ nav{
         justify-content: space-between;
         align-items: center;
         height: 15vh;
-        background-color: rgba(0, 0, 0, 0.2);
+        background-color: black;
     }
 
     #nav-links{
@@ -373,6 +400,179 @@ nav{
 
     #nav-links a{
         color: white;
+    }
+
+    .welcome_text {
+        font-size: xx-large;
+        text-shadow: black 2px 2px 3px ;
+    }
+
+    .index_section p {
+        text-align: center;
+        font-size: large;
+        width: 40rem;
+        margin-bottom: 2rem;
+    }
+
+    .index_section b  {
+        font-size: large;
+        width: 25rem;
+    }
+
+    .index_section a p  {
+        text-align: left;
+    }
+
+    #index_img1 {
+        width: 30rem;    
+        margin: 1rem;
+    }
+
+    #index_article {
+        width: 50rem;
+    }
+
+    #last_index_article {
+        width: 50rem;
+        margin-bottom: 3rem;
+    }
+
+    #exercise_section2 p {
+        text-align: center;
+        width: 40rem;
+    }
+
+    .exercise_img {
+        width: 30rem;
+    }
+    
+    .exercise_section h1 {
+        font-size: 2.25rem;
+        margin: 0.5rem;
+    }
+
+    .exercise_section h3 {
+        font-size: 1.5rem;
+        margin: 1rem;
+        margin-top: 0.5rem;
+    }
+    
+    .exercise_section b {
+        width: 50rem;
+        margin: 0.5rem;
+        font-size: large;
+    }
+    
+    .exercise_section p {
+        width: 52rem;
+        margin: 1rem;
+        text-align: left;
+        font-size: 1.1rem;
+    }
+    
+    #last_exercise_text {
+        margin-bottom: 4.5rem;
+    }
+
+    .clubs_section h1 {
+        font-size: 2.25rem;
+        margin: 3rem;
+        margin-bottom: 1rem;
+    }
+    
+    .clubs_section b {
+        width: 40rem;
+    }
+    
+    .clubs_section p {
+        width: 45rem;
+    }
+    
+    #club_article {
+        margin: 0.75rem;
+        width: 60vw;
+        height: 55px;
+    }
+    
+    #last_club_article {
+        margin-top: 0.75rem;
+        width: 60vw;
+    }
+
+    #service_img1 {
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        width: 20rem;
+    }
+
+    #service_img2 {
+        width: 35rem;
+    }
+
+    .service_section h1 {
+        font-size: xx-large;
+        margin: 0.5rem;
+    }
+    
+    .service_section h3 {
+        text-align: left;
+        width: 35rem;
+    }
+    
+    .service_section b {
+        width: 70vw;
+        margin: 0.5rem;
+        text-align: center;
+    }
+    
+    .service_section p {
+        width: 75vw;
+        margin: 1rem;
+        text-align: left;
+    }
+    
+    #last_service_text {
+        margin-bottom: 3rem;
+    }
+
+    .footer {
+        display: grid;
+        text-align: center;
+        padding: 4.5rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "fo1" "fo2" "fo3"
+        ;
+    }
+    
+    #footer_grid_area_1 {
+        grid-area: "fo1";
+    }
+    
+    #footer_grid_area_2 {
+        grid-area: "fo2";
+    }
+    
+    #footer_grid_area_3 {
+        grid-area: "fo3";
+    }
+
+    .footer h2 {
+        margin-bottom: 1.5rem;
+    }
+    
+    .footer p {
+        margin-bottom: 2.5rem;
+    }
+    
+    .footer ul {
+        list-style: none;
+        margin-bottom: 2.5rem;
+    }
+    
+    .footer ul p {
+        margin-bottom: 1rem;
+        text-decoration: underline;
     }
 
 }
