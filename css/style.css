@@ -62,6 +62,10 @@ nav{
     transition: ease 0.2s;
 }
 
+.current_html {
+    text-decoration: underline;
+}
+
 .burger_line{
     width: 25px;
     height: 3px;
