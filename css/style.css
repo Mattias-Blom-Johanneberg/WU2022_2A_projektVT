@@ -9,9 +9,9 @@ body {
     background-color: whitesmoke;
 }
 
-#logo_img1 {
+#logo_img {
     height: 15vh;
-    margin-left: 0px;
+    margin-left: 11.25rem;
 }
 
 nav{
@@ -420,6 +420,11 @@ nav{
 
     #nav-links a{
         color: white;
+    }
+
+    #logo_img {
+        height: 15vh;
+        margin-left: 9rem;
     }
 
     .welcome_text {
