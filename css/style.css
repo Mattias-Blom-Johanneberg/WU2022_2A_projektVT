@@ -26,7 +26,7 @@ nav{
 }
 
 #background_image {
-    background-image: url(../img/danielle-cerullo-CQfNt66ttZM-unsplash.jpg);
+    background-image: url(../img/background_image.jpg);
     height: 100vh;
 }
 
@@ -114,7 +114,6 @@ nav{
 
 .index_section {
     display: flex;
-    justify-content: top;
     align-items: center;
     flex-direction: column;
     color: black;
@@ -192,8 +191,6 @@ nav{
 }
 
 #index_img1 {
-    display: flex;
-    grid-area: "img1";
     width: 23rem;    
     margin: 0.75rem;
     margin-top: 2rem;
@@ -365,7 +362,6 @@ nav{
 .footer {
     display: flex;
     flex-direction: column;
-    align-items: left;
     background-color: black;
     color: white;
     padding: 3rem;
@@ -468,7 +464,7 @@ nav{
     }
 
     .exercise_img {
-        width: 30rem;
+        width: 20rem;
     }
     
     .exercise_section h1 {
@@ -514,13 +510,14 @@ nav{
     }
     
     #club_article {
-        margin: 0.75rem;
+        margin: 1.5rem;
         width: 60vw;
         height: 55px;
     }
     
     #last_club_article {
-        margin-top: 0.75rem;
+        margin: 1.5rem;
+        margin-bottom: 3rem;
         width: 60vw;
     }
 
@@ -589,20 +586,20 @@ nav{
         padding: 4.5rem;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: 
-        "fo1" "fo2" "fo3"
+        "f1" "f2" "f3"
         ;
     }
     
     #footer_grid_area_1 {
-        grid-area: "fo1";
+        grid-area: "f1";
     }
     
     #footer_grid_area_2 {
-        grid-area: "fo2";
+        grid-area: "f2";
     }
     
     #footer_grid_area_3 {
-        grid-area: "fo3";
+        grid-area: "f3";
     }
 
     .footer h2 {
