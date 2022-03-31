@@ -586,20 +586,20 @@ nav{
         padding: 4.5rem;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: 
-        "f1" "f2" "f3"
+        "f1 f2 f3"
         ;
     }
     
     #footer_grid_area_1 {
-        grid-area: "f1";
+        grid-area: f1;
     }
     
     #footer_grid_area_2 {
-        grid-area: "f2";
+        grid-area: f2;
     }
     
     #footer_grid_area_3 {
-        grid-area: "f3";
+        grid-area: f3;
     }
 
     .footer h2 {
