@@ -28,6 +28,8 @@ nav{
 #background_image {
     background-image: url(../img/background_image.jpg);
     height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #nav-links{
@@ -151,7 +153,7 @@ nav{
     width: 21rem;
 }
 
-#index_article {
+#index_article, #second_index_article, #last_index_article {
     text-align: center;
     margin: 0.5rem;
     width: 75vw;
@@ -160,31 +162,15 @@ nav{
 }
 
 #last_index_article {
-    text-align: center;
-    margin: 0.5rem;
     margin-bottom: 3rem;
-    width: 75vw;
-    height: 50px;
-    background-color: rgb(59, 55, 55);
 }
 
-#index_article a{
+#index_article a, #second_index_article a, #last_index_article a{
     color: white;
     text-decoration: none;
 }
 
-#last_index_article a{
-    color: white;
-    text-decoration: none;
-}
-
-#index_article:hover { 
-    opacity: 0.6;
-    transition: all 0.25s;
-    cursor: pointer;
-}
-
-#last_index_article:hover { 
+#index_article:hover, #second_index_article:hover, #last_index_article:hover { 
     opacity: 0.6;
     transition: all 0.25s;
     cursor: pointer;
@@ -265,7 +251,7 @@ nav{
     margin-bottom: 2.5rem;
 }
 
-#club_article {
+.clubs_section li {
     display: flex;
     align-items: center;
     margin: 0.5rem;
@@ -317,7 +303,7 @@ nav{
     width: 20rem;
 }
 
-#service_img2 {
+#service_img2, #service_img3, #service_img4, #service_img5, #service_img6 {
     margin-top: 2rem;
     margin-bottom: 1rem;
     width: 75vw;
@@ -399,6 +385,10 @@ nav{
         background-color: black;
     }
 
+    #background_image {
+        background-size: 100%;
+    }
+
     #nav-links{
         display: flex;
         flex-direction: row;
@@ -449,13 +439,8 @@ nav{
         margin: 1rem;
     }
 
-    #index_article {
+    #index_article, #second_index_article, #last_index_article {
         width: 50rem;
-    }
-
-    #last_index_article {
-        width: 50rem;
-        margin-bottom: 3rem;
     }
 
     #exercise_section2 p {
@@ -509,7 +494,7 @@ nav{
         width: 45rem;
     }
     
-    #club_article {
+    .clubs_section li {
         margin: 1.5rem;
         width: 60vw;
         height: 55px;
@@ -544,7 +529,7 @@ nav{
         width: 20rem;
     }
 
-    #service_img2 {
+    #service_img2, #service_img3, #service_img4, #service_img5, #service_img6 {
         margin-top: 2rem;
         width: 35rem;
     }
