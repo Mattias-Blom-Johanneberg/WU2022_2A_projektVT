@@ -135,6 +135,7 @@ nav{
 
 .index_section h2 {
     margin: 2rem;
+    margin-top: 3.5rem;
     margin-bottom: 1rem;
 }
 
@@ -151,6 +152,9 @@ nav{
     margin: 1rem;
     margin-bottom: 2rem;
     width: 21rem;
+    border: 1px solid black;   
+    border-radius: 5px;
+    padding: 1rem;
 }
 
 #index_article, #second_index_article, #last_index_article {
@@ -170,19 +174,29 @@ nav{
     text-decoration: none;
 }
 
+#index_article a p, #second_index_article a p, #last_index_article a p {
+    border: none;
+    padding: 0%;
+}
+
 #index_article:hover, #second_index_article:hover, #last_index_article:hover { 
     opacity: 0.6;
     transition: all 0.25s;
     cursor: pointer;
 }
 
-#index_img1 {
+#index_img1, #clubs_img {
     width: 23rem;    
     margin: 0.75rem;
     margin-top: 2rem;
 }
 
-.exercise_section {
+#clubs_img {
+    margin-bottom: 2.75rem;
+
+}
+
+.exercise_section, #exercise_section2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -194,10 +208,20 @@ nav{
     text-align: center;
 }
 
+#exercise_section2 {
+    margin-bottom: 3rem;
+}
+
 .exercise_img {
     margin-top: 3rem;
     margin-bottom: 2rem;
     width: 20rem;
+}
+
+#exercise_img1, #exercise_img2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    width: 65vw;
 }
 
 .exercise_section h1 {
@@ -249,6 +273,9 @@ nav{
     width: 75vw;
     margin: 1rem;
     margin-bottom: 2.5rem;
+    border: 1px solid black;   
+    border-radius: 5px;
+    padding: 1rem;
 }
 
 .clubs_section li {
@@ -258,13 +285,16 @@ nav{
     width: 80vw;
     height: 50px;
     background-color: honeydew;
+    border: 1px solid black;   
+    border-radius: 5px;
+    padding: 1rem;
 }
 
 #last_club_article {
     display: flex;
     align-items: center;
     margin: 0.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1.75rem;
     width: 80vw;
     height: 50px;
     background-color: honeydew;
@@ -275,7 +305,7 @@ nav{
     text-align: right;
     height: 300px;
     width: 350px;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
 }
 
 .gmap_canvas {
@@ -294,7 +324,7 @@ nav{
     margin-right: 7.5vw;
     margin-left: 7.5vw;
     background-color: white;
-    text-align: left;
+    text-align: center;
 }
 
 #service_img1 {
@@ -306,17 +336,12 @@ nav{
 #service_img2, #service_img3, #service_img4, #service_img5, #service_img6 {
     margin-top: 2rem;
     margin-bottom: 1rem;
-    width: 75vw;
+    width: 65vw;
 }
 
 .service_section h1 {
     font-size: xx-large;
     margin: 0.5rem;
-}
-
-.service_section h3 {
-    text-align: left;
-    width: 75vw;
 }
 
 .service_section b {
@@ -326,9 +351,17 @@ nav{
 }
 
 .service_section p {
-    width: 75vw;
+    width: 70vw;
     margin: 1rem;
+    margin-top: 1rem;
     text-align: left;
+}
+
+#service_section2 p {
+    margin-top: 0.75rem;
+    border: 1px solid black;   
+    border-radius: 5px;
+    padding: 1rem;
 }
 
 #last_service_text {
@@ -427,25 +460,59 @@ nav{
 
     .index_section b  {
         font-size: large;
-        width: 25rem;
+        width: 32rem;
     }
 
     .index_section a p  {
         text-align: left;
+        border: none;
+        padding: 0%;
     }
 
-    #index_img1 {
+    #index_img1, #clubs_img {
         width: 30rem;    
         margin: 1rem;
+    }
+
+    #clubs_img {
+        margin-bottom: 2.75rem;
     }
 
     #index_article, #second_index_article, #last_index_article {
         width: 50rem;
     }
 
+    #exercise_grid {
+        display: grid;
+        margin-top: 3rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "es1 es2"
+        ;   
+    }
+
+    #exercise_article1 {
+        grid-area: es1;
+    }
+
+    #exercise_article2 {
+        grid-area: es2;
+    }
+
+    #exercise_img1, #exercise_img2 {
+        width: 30vw;
+    }
+
+    #exercise_grid p {
+        text-align: center;
+        width: 30rem;
+    }
+
     #exercise_section2 p {
         text-align: center;
-        width: 40rem;
+        border: 1px solid black;   
+        border-radius: 5px;
+        padding: 1rem;
     }
 
     .exercise_img {
@@ -457,10 +524,15 @@ nav{
         margin: 0.5rem;
     }
 
-    .exercise_section h3 {
+    .exercise_section h2 {
         font-size: 1.5rem;
         margin: 1rem;
-        margin-top: 0.5rem;
+        margin-top: 1rem;
+    }
+
+    .exercise_section h3 {
+        font-size: 1.5rem;
+     
     }
     
     .exercise_section b {
@@ -492,10 +564,13 @@ nav{
     
     .clubs_section p {
         width: 45rem;
+        text-align: center;
+        
     }
     
     .clubs_section li {
         margin: 1.5rem;
+        margin-top: 0.5rem;
         width: 60vw;
         height: 55px;
     }
@@ -539,7 +614,7 @@ nav{
         margin: 0.5rem;
     }
     
-    .service_section h3 {
+    .service_section h2 {
         text-align: left;
         width: 35rem;
         font-size: 1.5rem;
@@ -557,8 +632,8 @@ nav{
     }
     
     #service_section2 p {
-        text-align: center;
-        width: 40rem;
+        text-align: left;
+        width: 35rem;
     }
     
     #last_service_text {
